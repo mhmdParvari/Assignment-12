@@ -1,4 +1,3 @@
-from fileinput import filename
 import random
 import time
 import threading
@@ -164,7 +163,7 @@ class Game(arcade.Window):
     def enemyGenerator(self):
         while True:
             self.enemyList.append(Enemy(self))
-            time.sleep(random.randint(1,5))
+            time.sleep(random.randint(1,4))
 
     def lose(self):
         self.clear()
